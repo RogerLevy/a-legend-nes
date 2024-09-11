@@ -8,6 +8,8 @@
 
 .SEGMENT "BANK_01_00"
 
+.GLOBAL LayoutRoomOrCaveOW_Common
+.EXPORT LayoutRoomOrCaveOW
 
 ; Imports from program bank 07
 
@@ -26,6 +28,7 @@
 .IMPORT ResetObjMetastate
 .IMPORT TableJump
 .IMPORT TurnOffAllVideo
+.IMPORT SwitchBank
 
 .EXPORT CheckInitWhirlwindAndBeginUpdate
 .EXPORT CheckPassiveTileObjects
@@ -1551,20 +1554,20 @@ UpdateGrumble3:
     STA ObjType+1
 
 InitUnderworldPerson_DoNothing:
-    RTS
+    RTS  
 
 ; Unknown block
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF
 
 CopyCommonCodeToRam:
     LDA #<__BANK_01_CODE_LOAD__ ; Source address $A500.
@@ -1703,44 +1706,44 @@ DemoBackgroundPatterns:
     .INCBIN "dat/DemoBackgroundPatterns.dat"
 
 ; Unknown block
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF
 
 ; Params:
 ; A: Y coordinate
@@ -2647,38 +2650,37 @@ UpdateRupeeStash_Full:
     RTS
 
 ; Unknown block
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF
-CommonCodeBlock_Bank1:
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF
 
 .SEGMENT "BANK_01_CODE"
-
+CommonCodeBlock_Bank1:
 
 ; Imports from program bank 02
 
@@ -2814,6 +2816,13 @@ CommonCodeBlock_Bank1:
 .EXPORT World_ChangeRupees
 .EXPORT WriteBlankPrioritySprites
 
+; Always called from Bank 5 so we restore that after calling the common routine
+LayoutRoomOrCaveOW:
+    LDA #7 ; test
+    JSR SwitchBank
+    JSR LayoutRoomOrCaveOW_Common
+    LDA #5
+    JMP SwitchBank
 
 ; Returns:
 ; A: 0
@@ -6694,10 +6703,10 @@ BeginShove:
     RTS
 
 Filler_7751:
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF
 
 .SEGMENT "BANK_01_ISR"
 

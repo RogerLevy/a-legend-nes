@@ -330,7 +330,7 @@
 .EXPORT UpdateTriforcePositionMarker
 .EXPORT Walker_Move
 .EXPORT WieldFlute
-
+.EXPORT SwitchBank
 
 PcmSamples:
     .INCBIN "dat/PcmSamples.dat"
@@ -5980,8 +5980,8 @@ IsrReset:
     STA $A000
     LSR
     STA $A000
-    LDA #$07
-    JSR SwitchBank
+    ;LDA #$0F
+    ;JSR SwitchBank              ; Doesn't seem to do anything (!)
     JMP RunGame
 
 SetMMC1Control:

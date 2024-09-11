@@ -42,8 +42,9 @@
 .IMPORT WieldBomb
 .IMPORT WieldCandle
 .IMPORT WriteBlankPrioritySprites
+.IMPORT LayoutRoomOrCaveOW
 
-; Imports from RAM code bank 06
+; Imports from RAM data bank 06
 
 .IMPORT ColumnDirectoryOW
 .IMPORT LevelNumberTransferBuf
@@ -5789,73 +5790,7 @@ LayoutRoomOW:
     ADC $03
     STA $03
 
-; Params:
-; [02:03]: address of room column directory
-;
-; Load the address of world flags in [$08:09].
-;
-
-LevelInfo = $08
-
-LayoutRoomOrCaveOW:
-    LDA LevelInfo_WorldFlagsAddr
-    STA LevelInfo
-    LDA LevelInfo_WorldFlagsAddr+1
-    STA LevelInfo+1
-    
-    LDA #<RoomTestData
-    STA $02
-    LDA #>RoomTestData
-    STA $03
-
-    LDY #$00
-    STY $07 ;source offset
-    STY $06 ;dest offset
-    
-@LoopRow:
-    JSR FetchTileMapAddr
-    JSR @DoColumn
-    INC $06
-    INC $06
-    LDA $06
-    CMP #22
-    BNE @LoopRow
-    RTS
-
-@DoColumn:
-    LDA #16
-    PHA
-@LoopColumn:
-    LDY $07
-    LDA ($02), Y
-    TAY
-    LDA SquareConversionMap, Y
-    SEC
-    SBC #1
-    
-    INC $07
-    TAX
-    STX $0D ;"square index"
-    LDA PrimarySquaresOW, X  
-    LDY $06
-    JSR WriteSquareOW
-       
-    ; go to next column in dest
-    ; (we're laying out left-to-right, top-to-bottom, but the play area is stored vertically)
-    LDA #44
-    JSR AddToInt16At0
-    
-    ; done?
-    PLA
-    SEC
-    SBC #1 
-    PHA
-    BNE @LoopColumn
-    PLA
-    
-    RTS
-    
-
+    JMP LayoutRoomOrCaveOW ; Moved to RAM code (see bank 1)    
 
 ;@LoopSquareOW:
 ;    LDY #$00
