@@ -151,7 +151,6 @@
 .EXPORT WaitAndScrollToSplitBottom
 .EXPORT World_FillHearts
 
-
 UpdateMenuAndMeters:
     JSR UpdateMenu
     JMP UpdateHeartsAndRupees
@@ -4218,186 +4217,186 @@ WriteDoorFaceTileHorizontally:
     RTS
 
 RoomLayoutsOW:
-    .INCBIN "dat/RoomLayoutsOW.dat"
+;    .INCBIN "dat/RoomLayoutsOW.dat"
 
 RoomLayoutOWCave0:
-    .BYTE $00, $00, $95, $95, $95, $95, $95, $C2
-    .BYTE $C2, $95, $95, $95, $95, $95, $00, $00
+;    .BYTE $00, $00, $95, $95, $95, $95, $95, $C2
+;    .BYTE $C2, $95, $95, $95, $95, $95, $00, $00
 
 RoomLayoutOWCave1:
-    .BYTE $00, $00, $95, $95, $95, $F8, $95, $C2
-    .BYTE $F8, $95, $95, $F8, $95, $95, $00, $00
+    ;.BYTE $00, $00, $95, $95, $95, $F8, $95, $C2
+    ;.BYTE $F8, $95, $95, $F8, $95, $95, $00, $00
 
 RoomLayoutOWCave2:
-    .BYTE $00, $A9, $64, $66, $02, $53, $54, $D1
-    .BYTE $54, $54, $56, $02, $64, $66, $A8, $00
+    ;.BYTE $00, $A9, $64, $66, $02, $53, $54, $D1
+    ;.BYTE $54, $54, $56, $02, $64, $66, $A8, $00
 
 ColumnHeapOW0:
-    .BYTE $DB, $5B, $5B, $DB, $5B, $1B, $0E, $1A
-    .BYTE $5B, $DB, $4E, $4E, $4E, $0E, $1A, $1B
-    .BYTE $DB, $4E, $32, $1B, $34, $4E, $1A, $1B
-    .BYTE $DB, $5B, $1B, $4E, $4E, $4E, $DB, $0E
-    .BYTE $32, $5B, $1B, $4E, $1A, $1B, $DB, $5B
-    .BYTE $1B, $4E, $4E, $1A, $1B, $DB, $CE, $4E
-    .BYTE $4E, $4E, $0E, $1A, $1B
+    ;.BYTE $DB, $5B, $5B, $DB, $5B, $1B, $0E, $1A
+    ;.BYTE $5B, $DB, $4E, $4E, $4E, $0E, $1A, $1B
+    ;.BYTE $DB, $4E, $32, $1B, $34, $4E, $1A, $1B
+    ;.BYTE $DB, $5B, $1B, $4E, $4E, $4E, $DB, $0E
+    ;.BYTE $32, $5B, $1B, $4E, $1A, $1B, $DB, $5B
+    ;.BYTE $1B, $4E, $4E, $1A, $1B, $DB, $CE, $4E
+    ;.BYTE $4E, $4E, $0E, $1A, $1B
 
 ColumnHeapOW1:
-    .BYTE $9B, $0C, $4E, $4E, $4E, $0E, $1A, $1B
-    .BYTE $CA, $4E, $0E, $4E, $4E, $4A, $C5, $45
-    .BYTE $05, $0B, $C5, $45, $05, $45, $45, $45
-    .BYTE $D9, $28, $59, $D9, $59, $59, $19, $D9
-    .BYTE $59, $4E, $0E, $59, $D9, $4E, $4E, $4E
-    .BYTE $0E, $59, $8E, $4E, $4E, $CE, $4E, $4E
-    .BYTE $0E
+    ;.BYTE $9B, $0C, $4E, $4E, $4E, $0E, $1A, $1B
+    ;.BYTE $CA, $4E, $0E, $4E, $4E, $4A, $C5, $45
+    ;.BYTE $05, $0B, $C5, $45, $05, $45, $45, $45
+    ;.BYTE $D9, $28, $59, $D9, $59, $59, $19, $D9
+    ;.BYTE $59, $4E, $0E, $59, $D9, $4E, $4E, $4E
+    ;.BYTE $0E, $59, $8E, $4E, $4E, $CE, $4E, $4E
+    ;.BYTE $0E
 
 ColumnHeapOW2:
-    .BYTE $D9, $59, $0E, $4E, $4E, $4E, $DB, $0E
-    .BYTE $5B, $5B, $4E, $1A, $1B, $DB, $0E, $33
-    .BYTE $5B, $1B, $4E, $1A, $1B, $CE, $4E, $4E
-    .BYTE $4E, $0E, $59, $DB, $4E, $33, $1B, $35
-    .BYTE $4E, $1A, $1B, $D9, $4E, $19, $0E, $19
-    .BYTE $4E, $D9, $0E, $19, $0E, $19, $0E, $19
-    .BYTE $0E, $D9, $4E, $0E, $19, $0E, $4E, $D9
-    .BYTE $19, $4E, $4E, $0E, $19, $D9, $0E, $59
-    .BYTE $59, $59
+    ;.BYTE $D9, $59, $0E, $4E, $4E, $4E, $DB, $0E
+    ;.BYTE $5B, $5B, $4E, $1A, $1B, $DB, $0E, $33
+    ;.BYTE $5B, $1B, $4E, $1A, $1B, $CE, $4E, $4E
+    ;.BYTE $4E, $0E, $59, $DB, $4E, $33, $1B, $35
+    ;.BYTE $4E, $1A, $1B, $D9, $4E, $19, $0E, $19
+    ;.BYTE $4E, $D9, $0E, $19, $0E, $19, $0E, $19
+    ;.BYTE $0E, $D9, $4E, $0E, $19, $0E, $4E, $D9
+    ;.BYTE $19, $4E, $4E, $0E, $19, $D9, $0E, $59
+    ;.BYTE $59, $59
 
 ColumnHeapOW3:
-    .BYTE $D9, $0E, $59, $59, $19, $0E, $D9, $4E
-    .BYTE $19, $0E, $28, $4E, $59, $DB, $4E, $13
-    .BYTE $0E, $13, $4E, $1A, $1B, $DB, $0E, $13
-    .BYTE $0E, $13, $0E, $13, $0E, $1A, $1B, $DB
-    .BYTE $4E, $0E, $13, $4E, $0E, $1A, $1B, $C8
-    .BYTE $48, $17, $4E, $4E, $1A, $1B, $C5, $45
-    .BYTE $07, $4E, $4E, $1A, $1B, $C5, $45, $07
-    .BYTE $0E, $1A, $DB, $5B, $1B, $4E, $4E, $4A
-    .BYTE $DB, $4E, $4E, $15
+    ;.BYTE $D9, $0E, $59, $59, $19, $0E, $D9, $4E
+    ;.BYTE $19, $0E, $28, $4E, $59, $DB, $4E, $13
+    ;.BYTE $0E, $13, $4E, $1A, $1B, $DB, $0E, $13
+    ;.BYTE $0E, $13, $0E, $13, $0E, $1A, $1B, $DB
+    ;.BYTE $4E, $0E, $13, $4E, $0E, $1A, $1B, $C8
+    ;.BYTE $48, $17, $4E, $4E, $1A, $1B, $C5, $45
+    ;.BYTE $07, $4E, $4E, $1A, $1B, $C5, $45, $07
+    ;.BYTE $0E, $1A, $DB, $5B, $1B, $4E, $4E, $4A
+    ;.BYTE $DB, $4E, $4E, $15
 
 ColumnHeapOW4:
-    .BYTE $C8, $48, $17, $4E, $4E, $59, $C9, $49
-    .BYTE $18, $4E, $4E, $D9, $59, $4E, $06, $C5
-    .BYTE $45, $45, $C9, $49, $09, $0B, $49, $49
-    .BYTE $09, $C8, $48, $08, $48, $C8, $48, $17
-    .BYTE $4E, $4E, $4E, $DB, $4E, $4E, $06, $C5
-    .BYTE $45, $07, $4E, $4E, $D9, $4E, $2C, $4E
-    .BYTE $4E, $59
+    ;.BYTE $C8, $48, $17, $4E, $4E, $59, $C9, $49
+    ;.BYTE $18, $4E, $4E, $D9, $59, $4E, $06, $C5
+    ;.BYTE $45, $45, $C9, $49, $09, $0B, $49, $49
+    ;.BYTE $09, $C8, $48, $08, $48, $C8, $48, $17
+    ;.BYTE $4E, $4E, $4E, $DB, $4E, $4E, $06, $C5
+    ;.BYTE $45, $07, $4E, $4E, $D9, $4E, $2C, $4E
+    ;.BYTE $4E, $59
 
 ColumnHeapOW5:
-    .BYTE $DB, $5B, $1B, $0E, $4A, $4A, $0A, $DB
-    .BYTE $5B, $4E, $06, $C5, $45, $07, $4E, $4E
-    .BYTE $4E, $DB, $0E, $15, $48, $17, $4E, $1A
-    .BYTE $1B, $DB, $0E, $06, $45, $07, $4E, $1A
-    .BYTE $1B, $DB, $0E, $06, $05, $45, $45, $45
-    .BYTE $DB, $0E, $16, $49, $18, $4E, $1A, $1B
-    .BYTE $D9, $0E, $59, $59, $19, $0E, $CE, $4E
-    .BYTE $4E, $06, $45, $45
+    ;.BYTE $DB, $5B, $1B, $0E, $4A, $4A, $0A, $DB
+    ;.BYTE $5B, $4E, $06, $C5, $45, $07, $4E, $4E
+    ;.BYTE $4E, $DB, $0E, $15, $48, $17, $4E, $1A
+    ;.BYTE $1B, $DB, $0E, $06, $45, $07, $4E, $1A
+    ;.BYTE $1B, $DB, $0E, $06, $05, $45, $45, $45
+    ;.BYTE $DB, $0E, $16, $49, $18, $4E, $1A, $1B
+    ;.BYTE $D9, $0E, $59, $59, $19, $0E, $CE, $4E
+    ;.BYTE $4E, $06, $45, $45
 
 ColumnHeapOW6:
-    .BYTE $D9, $4E, $4E, $16, $49, $49, $D9, $4E
-    .BYTE $4E, $06, $C5, $45, $07, $4E, $D9, $59
-    .BYTE $4E, $15, $48, $48, $DB, $0E, $1C, $1F
-    .BYTE $4E, $4E, $1A, $1B, $DB, $0E, $1D, $0C
-    .BYTE $4E, $4E, $1A, $1B, $DB, $0E, $1E, $20
-    .BYTE $4E, $4E, $1A, $1B, $DB, $0E, $21, $24
-    .BYTE $4E, $4E, $1A, $1B, $DB, $0E, $22, $0C
-    .BYTE $4E, $4E, $4A
+    ;.BYTE $D9, $4E, $4E, $16, $49, $49, $D9, $4E
+    ;.BYTE $4E, $06, $C5, $45, $07, $4E, $D9, $59
+    ;.BYTE $4E, $15, $48, $48, $DB, $0E, $1C, $1F
+    ;.BYTE $4E, $4E, $1A, $1B, $DB, $0E, $1D, $0C
+    ;.BYTE $4E, $4E, $1A, $1B, $DB, $0E, $1E, $20
+    ;.BYTE $4E, $4E, $1A, $1B, $DB, $0E, $21, $24
+    ;.BYTE $4E, $4E, $1A, $1B, $DB, $0E, $22, $0C
+    ;.BYTE $4E, $4E, $4A
 
 ColumnHeapOW7:
-    .BYTE $DB, $0E, $23, $25, $4E, $4E, $1A, $1B
-    .BYTE $DB, $4E, $0E, $26, $4E, $0E, $1A, $1B
-    .BYTE $DB, $5B, $07, $4E, $1A, $1B, $DB, $5B
-    .BYTE $07, $4E, $4E, $1A, $1B, $CE, $0E, $59
-    .BYTE $59, $19, $0E, $D9, $4E, $0E, $26, $4E
-    .BYTE $0E, $D9, $4E, $4E, $4E, $4E, $0E, $DB
-    .BYTE $4E, $19, $0E, $19, $4E, $1A, $1B, $DB
-    .BYTE $5B, $5B, $45
+    ;.BYTE $DB, $0E, $23, $25, $4E, $4E, $1A, $1B
+    ;.BYTE $DB, $4E, $0E, $26, $4E, $0E, $1A, $1B
+    ;.BYTE $DB, $5B, $07, $4E, $1A, $1B, $DB, $5B
+    ;.BYTE $07, $4E, $4E, $1A, $1B, $CE, $0E, $59
+    ;.BYTE $59, $19, $0E, $D9, $4E, $0E, $26, $4E
+    ;.BYTE $0E, $D9, $4E, $4E, $4E, $4E, $0E, $DB
+    ;.BYTE $4E, $19, $0E, $19, $4E, $1A, $1B, $DB
+    ;.BYTE $5B, $5B, $45
 
 ColumnHeapOW8:
-    .BYTE $C5, $05, $5B, $5B, $DB, $5B, $27, $0E
-    .BYTE $1A, $5B, $DB, $0E, $14, $0E, $14, $0E
-    .BYTE $14, $4E, $0E, $CA, $4A, $0A, $4E, $4E
-    .BYTE $1A, $1B, $DB, $1B, $35, $4E, $4E, $0E
-    .BYTE $1A, $1B, $9B, $27, $4E, $4E, $06, $C5
-    .BYTE $45, $05, $2F, $4E, $4E, $0E, $DB, $0E
-    .BYTE $22, $0C, $4E, $4E, $4A, $DB, $0E, $14
-    .BYTE $0E, $29, $0E, $14, $4E, $0E
+    ;.BYTE $C5, $05, $5B, $5B, $DB, $5B, $27, $0E
+    ;.BYTE $1A, $5B, $DB, $0E, $14, $0E, $14, $0E
+    ;.BYTE $14, $4E, $0E, $CA, $4A, $0A, $4E, $4E
+    ;.BYTE $1A, $1B, $DB, $1B, $35, $4E, $4E, $0E
+    ;.BYTE $1A, $1B, $9B, $27, $4E, $4E, $06, $C5
+    ;.BYTE $45, $05, $2F, $4E, $4E, $0E, $DB, $0E
+    ;.BYTE $22, $0C, $4E, $4E, $4A, $DB, $0E, $14
+    ;.BYTE $0E, $29, $0E, $14, $4E, $0E
 
 ColumnHeapOW9:
-    .BYTE $DB, $35, $4E, $4E, $4E, $1A, $1B, $DB
-    .BYTE $1B, $34, $4E, $06, $C5, $45, $05, $2E
-    .BYTE $4E, $4E, $0E, $CE, $0E, $14, $0E, $14
-    .BYTE $0E, $14, $0E, $1A, $1B, $CE, $0E, $14
-    .BYTE $0E, $14, $0E, $14, $4E, $0E, $DB, $4D
-    .BYTE $4D, $4D, $0D, $1A, $1B, $C5, $05, $1B
-    .BYTE $0C, $4E, $0E, $4A, $0A, $DB, $1B, $35
-    .BYTE $4E, $06, $45, $C5, $4E, $4E, $4E, $0E
-    .BYTE $45
+    ;.BYTE $DB, $35, $4E, $4E, $4E, $1A, $1B, $DB
+    ;.BYTE $1B, $34, $4E, $06, $C5, $45, $05, $2E
+    ;.BYTE $4E, $4E, $0E, $CE, $0E, $14, $0E, $14
+    ;.BYTE $0E, $14, $0E, $1A, $1B, $CE, $0E, $14
+    ;.BYTE $0E, $14, $0E, $14, $4E, $0E, $DB, $4D
+    ;.BYTE $4D, $4D, $0D, $1A, $1B, $C5, $05, $1B
+    ;.BYTE $0C, $4E, $0E, $4A, $0A, $DB, $1B, $35
+    ;.BYTE $4E, $06, $45, $C5, $4E, $4E, $4E, $0E
+    ;.BYTE $45
 
 ColumnHeapOWA:
-    .BYTE $DB, $5B, $34, $4E, $4E, $1A, $1B, $DB
-    .BYTE $5B, $35, $4E, $4E, $1A, $1B, $9B, $35
-    .BYTE $4E, $4E, $4E, $0E, $33, $1B, $9B, $34
-    .BYTE $4E, $4E, $4E, $0E, $32, $1B, $9B, $34
-    .BYTE $4E, $4E, $4E, $0E, $1A, $1B, $9B, $35
-    .BYTE $4E, $4E, $4E, $0E, $1A, $1B, $DB, $5B
-    .BYTE $34, $0E, $32, $DB, $5B, $35, $0E, $33
-    .BYTE $5B, $DB, $34, $4E, $4E, $0E, $32, $DB
-    .BYTE $35, $4E, $4E, $0E, $33
+    ;.BYTE $DB, $5B, $34, $4E, $4E, $1A, $1B, $DB
+    ;.BYTE $5B, $35, $4E, $4E, $1A, $1B, $9B, $35
+    ;.BYTE $4E, $4E, $4E, $0E, $33, $1B, $9B, $34
+    ;.BYTE $4E, $4E, $4E, $0E, $32, $1B, $9B, $34
+    ;.BYTE $4E, $4E, $4E, $0E, $1A, $1B, $9B, $35
+    ;.BYTE $4E, $4E, $4E, $0E, $1A, $1B, $DB, $5B
+    ;.BYTE $34, $0E, $32, $DB, $5B, $35, $0E, $33
+    ;.BYTE $5B, $DB, $34, $4E, $4E, $0E, $32, $DB
+    ;.BYTE $35, $4E, $4E, $0E, $33
 
 ColumnHeapOWB:
-    .BYTE $DB, $5B, $07, $4E, $4E, $4E, $DB, $0E
-    .BYTE $06, $05, $45, $2F, $0E, $1A, $1B, $DB
-    .BYTE $0E, $06, $05, $45, $2E, $0E, $1A, $1B
-    .BYTE $CA, $4A, $0A, $0E, $1A, $DB, $5B, $15
-    .BYTE $45, $45, $45, $DB, $4E, $4E, $4E, $0E
-    .BYTE $CA, $4E, $4E, $4E, $0E, $1A, $1B, $DB
-    .BYTE $4E, $2C, $0E, $2C, $4E, $1A, $1B, $CA
-    .BYTE $4A, $4E, $06, $45, $45
+    ;.BYTE $DB, $5B, $07, $4E, $4E, $4E, $DB, $0E
+    ;.BYTE $06, $05, $45, $2F, $0E, $1A, $1B, $DB
+    ;.BYTE $0E, $06, $05, $45, $2E, $0E, $1A, $1B
+    ;.BYTE $CA, $4A, $0A, $0E, $1A, $DB, $5B, $15
+    ;.BYTE $45, $45, $45, $DB, $4E, $4E, $4E, $0E
+    ;.BYTE $CA, $4E, $4E, $4E, $0E, $1A, $1B, $DB
+    ;.BYTE $4E, $2C, $0E, $2C, $4E, $1A, $1B, $CA
+    ;.BYTE $4A, $4E, $06, $45, $45
 
 ColumnHeapOWC:
-    .BYTE $9B, $35, $4E, $0E, $13, $4E, $0E, $1A
-    .BYTE $1B, $F6, $76, $0F, $4E, $1A, $1B, $5B
-    .BYTE $DB, $4D, $4D, $4D, $4D, $0D, $CE, $4E
-    .BYTE $0E, $30, $45, $45, $05, $DB, $F7, $F7
-    .BYTE $77, $77, $37, $77, $1A, $1B, $DB, $1B
-    .BYTE $34, $4E, $4E, $0E, $1A, $1B, $DB, $34
-    .BYTE $0E, $4E, $4E, $0E, $1A, $1B
+    ;.BYTE $9B, $35, $4E, $0E, $13, $4E, $0E, $1A
+    ;.BYTE $1B, $F6, $76, $0F, $4E, $1A, $1B, $5B
+    ;.BYTE $DB, $4D, $4D, $4D, $4D, $0D, $CE, $4E
+    ;.BYTE $0E, $30, $45, $45, $05, $DB, $F7, $F7
+    ;.BYTE $77, $77, $37, $77, $1A, $1B, $DB, $1B
+    ;.BYTE $34, $4E, $4E, $0E, $1A, $1B, $DB, $34
+    ;.BYTE $0E, $4E, $4E, $0E, $1A, $1B
 
 ColumnHeapOWD:
-    .BYTE $C5, $45, $0B, $4E, $4E, $4E, $DB, $0E
-    .BYTE $06, $45, $07, $4E, $4E, $9B, $27, $4E
-    .BYTE $4E, $4E, $0E, $1A, $1B, $9B, $27, $4E
-    .BYTE $4E, $4E, $4E, $0E, $DB, $1B, $27, $07
-    .BYTE $4E, $1A, $5B, $1B, $CE, $4E, $4E, $4E
-    .BYTE $33, $5B, $DB, $5B, $1B, $0E, $15, $48
-    .BYTE $48, $DB, $0E, $2D, $0C, $4E, $4E, $4A
-    .BYTE $DB, $0E, $1C, $1F, $0E, $1E, $20, $0E
-    .BYTE $1A, $1B
+    ;.BYTE $C5, $45, $0B, $4E, $4E, $4E, $DB, $0E
+    ;.BYTE $06, $45, $07, $4E, $4E, $9B, $27, $4E
+    ;.BYTE $4E, $4E, $0E, $1A, $1B, $9B, $27, $4E
+    ;.BYTE $4E, $4E, $4E, $0E, $DB, $1B, $27, $07
+    ;.BYTE $4E, $1A, $5B, $1B, $CE, $4E, $4E, $4E
+    ;.BYTE $33, $5B, $DB, $5B, $1B, $0E, $15, $48
+    ;.BYTE $48, $DB, $0E, $2D, $0C, $4E, $4E, $4A
+    ;.BYTE $DB, $0E, $1C, $1F, $0E, $1E, $20, $0E
+    ;.BYTE $1A, $1B
 
 ColumnHeapOWE:
-    .BYTE $C8, $48, $08, $C5, $45, $45, $08, $48
-    .BYTE $48, $DB, $35, $CE, $4E, $4E, $4E, $0E
-    .BYTE $33, $1B, $DB, $0E, $33, $5B, $27, $4E
-    .BYTE $1A, $1B, $DB, $4E, $4E, $1C, $1F, $0E
-    .BYTE $1A, $1B, $DB, $5B, $1B, $35, $4E, $33
-    .BYTE $DB, $5B, $1B, $34, $4E, $32, $DB, $4E
-    .BYTE $4E, $4E, $0E, $33
+    ;.BYTE $C8, $48, $08, $C5, $45, $45, $08, $48
+    ;.BYTE $48, $DB, $35, $CE, $4E, $4E, $4E, $0E
+    ;.BYTE $33, $1B, $DB, $0E, $33, $5B, $27, $4E
+    ;.BYTE $1A, $1B, $DB, $4E, $4E, $1C, $1F, $0E
+    ;.BYTE $1A, $1B, $DB, $5B, $1B, $35, $4E, $33
+    ;.BYTE $DB, $5B, $1B, $34, $4E, $32, $DB, $4E
+    ;.BYTE $4E, $4E, $0E, $33
 
 ColumnHeapOWF:
-    .BYTE $9B, $5B, $34, $4E, $0E, $32, $DB, $1B
-    .BYTE $35, $4E, $0E, $33, $1B, $DB, $0E, $1E
-    .BYTE $20, $0E, $1C, $1F, $0E, $1A, $1B, $DB
-    .BYTE $4E, $4E, $1E, $20, $0E, $1A, $1B, $D9
-    .BYTE $59, $19, $4E, $4E, $59, $DB, $0E, $2D
-    .BYTE $0C, $4E, $4E, $1A, $1B, $CE, $4E, $0E
-    .BYTE $31, $05, $C5, $45, $07, $4E, $28, $59
-    .BYTE $19, $DB, $4D, $4D, $12, $4D, $1A, $1B
-    .BYTE $DB, $77, $77, $77, $37, $1A, $1B
+    ;.BYTE $9B, $5B, $34, $4E, $0E, $32, $DB, $1B
+    ;.BYTE $35, $4E, $0E, $33, $1B, $DB, $0E, $1E
+    ;.BYTE $20, $0E, $1C, $1F, $0E, $1A, $1B, $DB
+    ;.BYTE $4E, $4E, $1E, $20, $0E, $1A, $1B, $D9
+    ;.BYTE $59, $19, $4E, $4E, $59, $DB, $0E, $2D
+    ;.BYTE $0C, $4E, $4E, $1A, $1B, $CE, $4E, $0E
+    ;.BYTE $31, $05, $C5, $45, $07, $4E, $28, $59
+    ;.BYTE $19, $DB, $4D, $4D, $12, $4D, $1A, $1B
+    ;.BYTE $DB, $77, $77, $77, $37, $1A, $1B
 
 RoomLayoutsOWAddr:
-    .ADDR RoomLayoutsOW
+;    .ADDR RoomLayoutsOW
 
 ColumnHeapOWAddr:
-    .ADDR ColumnHeapOW0
+;    .ADDR ColumnHeapOW0
 
 WallTileList:
     .BYTE $E0, $F5, $F5, $F5, $F5, $B8, $F5, $D4
@@ -5795,121 +5794,140 @@ LayoutRoomOW:
 ;
 ; Load the address of world flags in [$08:09].
 ;
+
+LevelInfo = $08
+
 LayoutRoomOrCaveOW:
     LDA LevelInfo_WorldFlagsAddr
-    STA $08
+    STA LevelInfo
     LDA LevelInfo_WorldFlagsAddr+1
-    STA $09
+    STA LevelInfo+1
+    
+    LDA #<RoomTestData
+    STA $02
+    LDA #>RoomTestData
+    STA $03
+
+    LDY #$00
+    STY $07 ;source offset
+    STY $06 ;dest offset
+    
+@LoopRow:
     JSR FetchTileMapAddr
-
-    ; For each column in room, indexed by [06]:
-    LDA #$00
-    STA $0C                     ; Reset [$0C] used for tracking repeat state.
-    STA $06
-
-@LoopColumnOW:
-    LDY $06
-    LDA ($02), Y                ; Get a column descriptor.
-    AND #$F0                    ; Put column table number * 2 in X.
-    LSR
-    LSR
-    LSR
-    TAX
-
-    ; Load the column table address for this descriptor in [$04:05].
-    LDA ColumnDirectoryOW, X
-    STA $04
-    LDA ColumnDirectoryOW+1, X
-    STA $05
-    LDA ($02), Y                ; Get the column descriptor.
-    AND #$0F                    ; Put column index in X.
-    TAX
-    LDY #$FF
-:
-    ; Look for the beginning of a column.
-    INY
-    LDA ($04), Y                ; Get a square descriptor.
-    BPL :-                      ; If high bit is clear, then go read the next square descriptor.
-    DEX
-    BPL :-                      ; If this isn't the column we want, then go keep looking.
-
-    ; We found the column.
-    TYA
-    JSR AddToInt16At4           ; Advance the square descriptor pointer by the offset, so we don't have to keep the offset in Y.
-    LDA #$00                    ; Reset row number in [07].
-    STA $07
-
-@LoopSquareOW:
-    LDY #$00
-    LDA ($04), Y                ; Get the square descriptor.
-    AND #$3F                    ; Get square index and put it in [$0D] and X.
-    STA $0D
-    TAX
-    LDA PrimarySquaresOW, X
-    PHA                         ; Save primary square.
-    LDY RoomId                  ; Get room flags.
-    LDA ($08), Y
-    AND #$80
-    BEQ @SkipSecret             ; If the secret wasn't found in this room, then skip all this.
-    PLA                         ; Restore primary square.
-
-    ; The secret was found in this room.
-    CMP #$E7
-    BEQ @MakeStairs             ; If this is a tree, go turn it into stairs.
-    CMP #$E6
-    BEQ @MakeCave               ; If this is a rock wall, go turn it into a cave entrance.
-    CMP #$EA
-    BNE @RestoreSquare          ; If this not a special armos, go leave the primary as is.
-
-@MakeStairs:
-    ; This is a tree or a special armos ($EA).
-    ; Set the primary to stairs ($70), and square index to the
-    ; first value ($10) for a type 1 square.
-    LDA #$10
-    STA $0D
-    LDA #$70
-    BNE @RestoreSquare
-
-@MakeCave:
-    ; This is a rock wall. Turn it into a cave entrance.
-    LDA #$0C
-    STA $0D
-
-@RestoreSquare:
-    PHA
-
-@SkipSecret:
-    PLA                         ; Restore primary square, if it wasn't modified above.
-    JSR CheckTileObject
-    LDY #$00
-    JSR WriteSquareOW
-    LDA #$02                    ; Point to next square in column in play area.
-    JSR AddToInt16At0
-    LDY #$00
-    LDA ($04), Y                ; Get square descriptor.
-    AND #$40
-    BEQ @NextSquare             ; If we need to repeat this tile,
-    EOR $0C                     ; then flip [$0C].
-    STA $0C
-    BNE :+                      ; After the second time flipping it, [$0C] = 0, and we've repeated it once. So,
-
-@NextSquare:
-    JSR Add1ToInt16At4          ; Point to the next square descriptor.
-:
-    INC $07                     ; Increment the processed row count.
-    LDA $07
-    CMP #$0B                    ; There are $B square rows in the play area.
-    BNE @LoopSquareOW           ; If we haven't written $B rows, then go process a square.
-
-    ; At the end of a column, we've reached the top of the next one.
-    ; Move one more column over to get to the next square column.
-    LDA #$16
-    JSR AddToInt16At0
-    INC $06                     ; Increment column index.
+    JSR @DoColumn
+    INC $06
+    INC $06
     LDA $06
-    CMP #$10
-    BCS L16AF0_Exit             ; If we have processed all columns, then return.
-    JMP @LoopColumnOW           ; Go process the next one.
+    CMP #22
+    BNE @LoopRow
+    RTS
+
+@DoColumn:
+    LDA #16
+    PHA
+@LoopColumn:
+    LDY $07
+    LDA ($02), Y
+    TAY
+    LDA SquareConversionMap, Y
+    SEC
+    SBC #1
+    
+    INC $07
+    TAX
+    STX $0D ;"square index"
+    LDA PrimarySquaresOW, X  
+    LDY $06
+    JSR WriteSquareOW
+       
+    ; go to next column in dest
+    ; (we're laying out left-to-right, top-to-bottom, but the play area is stored vertically)
+    LDA #44
+    JSR AddToInt16At0
+    
+    ; done?
+    PLA
+    SEC
+    SBC #1 
+    PHA
+    BNE @LoopColumn
+    PLA
+    
+    RTS
+    
+
+
+;@LoopSquareOW:
+;    LDY #$00
+;    LDA ($04), Y                ; Get the square descriptor.
+;    AND #$3F                    ; Get square index and put it in [$0D] and X.
+;    STA $0D
+;    TAX
+;    LDA PrimarySquaresOW, X
+;    PHA                         ; Save primary square.
+;    LDY RoomId                  ; Get room flags.
+;    LDA ($08), Y
+;    AND #$80
+;    BEQ @SkipSecret             ; If the secret wasn't found in this room, then skip all this.
+;    PLA                         ; Restore primary square.
+;
+;    ; The secret was found in this room.
+;    CMP #$E7
+;    BEQ @MakeStairs             ; If this is a tree, go turn it into stairs.
+;    CMP #$E6
+;    BEQ @MakeCave               ; If this is a rock wall, go turn it into a cave entrance.
+;    CMP #$EA
+;    BNE @RestoreSquare          ; If this not a special armos, go leave the primary as is.
+;
+;@MakeStairs:
+;    ; This is a tree or a special armos ($EA).
+;    ; Set the primary to stairs ($70), and square index to the
+;    ; first value ($10) for a type 1 square.
+;    LDA #$10
+;    STA $0D
+;    LDA #$70
+;    BNE @RestoreSquare
+;
+;@MakeCave:
+;    ; This is a rock wall. Turn it into a cave entrance.
+;    LDA #$0C
+;    STA $0D
+;
+;@RestoreSquare:
+;    PHA
+;
+;@SkipSecret:
+;    PLA                         ; Restore primary square, if it wasn't modified above.
+;    JSR CheckTileObject
+;    LDY #$00
+;    JSR WriteSquareOW
+;    LDA #$02                    ; Point to next square in column in play area.
+;    JSR AddToInt16At0
+;    LDY #$00
+;    LDA ($04), Y                ; Get square descriptor.
+;    AND #$40
+;    BEQ @NextSquare             ; If we need to repeat this tile,
+;    EOR $0C                     ; then flip [$0C].
+;    STA $0C
+;    BNE :+                      ; After the second time flipping it, [$0C] = 0, and we've repeated it once. So,
+;
+;@NextSquare:
+;    JSR Add1ToInt16At4          ; Point to the next square descriptor.
+;:
+;    INC $07                     ; Increment the processed row count.
+;    LDA $07
+;    CMP #$0B                    ; There are $B square rows in the play area.
+;    BNE @LoopSquareOW           ; If we haven't written $B rows, then go process a square.
+;
+;    ; At the end of a column, we've reached the top of the next one.
+;    ; Move one more column over to get to the next square column.
+;    LDA #$16
+;    JSR AddToInt16At0
+;    INC $06                     ; Increment column index.
+;    LDA $06
+;    CMP #$10
+;    BCS L16AF0_Exit             ; If we have processed all columns, then return.
+;    JMP @LoopColumnOW           ; Go process the next one.
 
 ; Params:
 ; A: primary square
@@ -6238,129 +6256,129 @@ LayoutRoom_SubmodeTask:
     RTS
 
 ; Unknown block
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-    .BYTE $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+    ;.BYTE $FF, $FF, $FF, $FF, $FF, $FF
 
 InitMode3_Sub2:
     LDA RoomId
@@ -8282,12 +8300,37 @@ CreateRoomObjects:
     DEC ObjState+19
     RTS
 
+SquareConversionMap:
+    ;0
+    .BYTE 0,28,6,54,53,1,15,51,52,20
+    ;10
+    .BYTE 22,7,23,34,35,36,46,9,10,45
+    ;20
+    .BYTE 38,37,11,27,24,8,25,48,47,55
+    ;30
+    .BYTE 29,31,30,32,33,28,26,26,54,15
+    ;40
+    .BYTE 56,21,34,46,36,0,0,0,0,0
+    ;50
+    .BYTE 26,35,45,37,38,49,7,23,6,10
+    ;60
+    .BYTE 27,11,28,53,54,53,30,22,34,35
+    ;70
+    .BYTE 36,6,45,37,38,12,24,8,25,52
+    ;80
+    .BYTE 51,51,52,27,11,46,47,20,12,48,50
+
+RoomTestData:
+    ;.BYTE 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+    ;.BYTE 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31
+    ;.BYTE 32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47
+    ;.BYTE 48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63
+    .BYTE 58,58,58,58,58,58,59,6,6,50,50,50,50,50,50,50,58,58,58,58,58,58,59,6,6,50,50,50,50,50,50,50,58,58,58,58,58,58,59,6,6,6,6,6,6,6,6,6,58,58,58,58,58,58,59,6,6,6,19,6,19,6,6,6,77,77,77,77,77,77,78,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,83,83,83,6,6,6,6,6,6,19,6,6,6,19,6,6,62,62,62,6,6,6,6,6,6,6,19,19,19,6,6,6,62,62,62,6,6,6,6,6,6,6,6,6,6,6,6,6,62,62,62,50,50,50,50,50,50,50,50,50,50,50,50,50,62,62,62,50,50,50,50,50,50,50,50,50,50,50,50,50
+    ;.BYTE 2,2,2,2,2,2,59,6,6,50,50,50,50,50,50,50,58,58,58,58,58,58,59,6,6,50,50,50,50,50,50,50,58,58,58,58,58,58,59,6,6,6,6,6,6,6,6,6,58,58,58,58,58,58,59,6,6,6,6,6,6,6,6,6,77,77,77,77,77,77,78,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,83,83,83,6,6,6,6,6,6,6,6,6,6,6,6,6,62,62,62,6,6,6,6,6,6,6,6,6,6,6,6,6,62,62,62,6,6,6,6,6,6,6,6,6,6,6,6,6,62,62,62,50,50,50,50,50,50,50,50,50,50,50,50,50,62,62,62,50,50,50,50,50,50,50,50,50,50,50,50,50
+
 .SEGMENT "BANK_05_ISR"
-
-
 .EXPORT SetMMC1Control_Local5
 .EXPORT SwitchBank_Local5
-
 
 ; Unknown block
     .BYTE $78, $D8, $A9, $00, $8D, $00, $20, $A2
@@ -8325,9 +8368,6 @@ SwitchBank_Local5:
     RTS
 
 .SEGMENT "BANK_05_VEC"
-
-
-
 
 ; Unknown block
     .BYTE $84, $E4, $50, $BF, $F0, $BF
